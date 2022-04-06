@@ -10,3 +10,6 @@ pip install -r requirements.txt
 `<br><br>
 `python pos.py` to get text field coordinates <br><br>
 `python main.py`
+
+
+or just run `start.bat`
