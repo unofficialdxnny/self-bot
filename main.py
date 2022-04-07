@@ -33,25 +33,24 @@ os.system('cls')
 
 print(banner)
 
-x = int(input('Please type in the X axis : '))
+if kb.read_key('enter'):
+    textfield = pag.position()
+    print(f' The axis of the text field are {textfield}')
+
 print('')
-y = int(input('Please type in the Y axis : '))
-print('')
-amount = float(input('Type in number for this to run'))
+amount = float(input(' Type in number for this to run : '))
 print('')
 while True:
     os.system('cls')
     print(banner)
-    pag.dragTo(x, y)
+    pag.dragTo(textfield)
     mouse.click()
     kb.write('''
   
-trading retro star platinum over heaven,
-volcanic golden experience requiem,
-tusk act four and ender king crimson; No 🤡 offers    
+trading retro star platinum over heaven, volcanic golden experience requiem, tusk act four and ender king crimson; No 🤡 offers    
 
     ''')
     amount -= 1
-    print(f'Finished one cycle. {amount} left to go.')
+    print(f' Finished one cycle. {amount} left to go.')
     t = random.randint(420, 540)
     time.sleep(t)
