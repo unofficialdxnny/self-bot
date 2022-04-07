@@ -33,23 +33,22 @@ os.system('cls')
 
 print(banner)
 
+print(':: Press enter key when your mouse is over the text field')
 if kb.read_key('enter'):
     textfield = pag.position()
     print(f' The axis of the text field are {textfield}')
 
 print('')
-amount = float(input(' Type in number for this to run : '))
+amount = float(input(' Type in number of times to send this message : '))
+message = input('What is the message you will like to send')
 print('')
 while True:
     os.system('cls')
     print(banner)
     pag.dragTo(textfield)
     mouse.click()
-    kb.write('''
-  
-trading retro star platinum over heaven, volcanic golden experience requiem, tusk act four and ender king crimson; No 🤡 offers    
+    kb.write('{message}')
 
-    ''')
     amount -= 1
     print(f' Finished one cycle. {amount} left to go.')
     t = random.randint(420, 540)
