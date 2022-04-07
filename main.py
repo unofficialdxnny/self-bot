@@ -39,15 +39,21 @@ if kb.read_key('enter'):
     print(f' The axis of the text field are {textfield}')
 
 print('')
-amount = float(input(' Type in number of times to send this message : '))
-message = input('What is the message you will like to send')
+amount = int(input(' Type in number of times to send this message : '))
+print('')
+message = input(' What is the message you will like to send : ')
+print('')
+minimum = int(input(' Type in the minimum time in seconds before the message is sent : '))
+print('')
+maximum = int(input(' Type in the maximum time in seconds before the message is sent : '))
 print('')
 while True:
     os.system('cls')
     print(banner)
     pag.dragTo(textfield)
     mouse.click()
-    kb.write('{message}')
+    kb.write(message)
+    kb.press('enter')
 
     amount -= 1
     print(f' Finished one cycle. {amount} left to go.')
