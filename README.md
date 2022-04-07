@@ -8,7 +8,6 @@ very basic so i wont write a proper readme
 `
 pip install -r requirements.txt
 `<br><br>
-`python pos.py` to get text field coordinates <br><br>
 `python main.py`
 
 
